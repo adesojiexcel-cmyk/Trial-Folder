@@ -1,0 +1,49 @@
+*{
+font-family: 'tahoma' sans-serif;
+}
+header{
+    background-color: blue;
+    color: #f5f6f7
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+.nav-container{
+    background-color: rgb(128, 177, 173);
+    color: black
+}
+
+.sidebar{
+    display: flex;
+    background-color: gray;
+    width: 30%;
+}
+
+.main-content {
+    width: 70%;
+}
+#main-container{
+    display: flex;
+    
+}
+
+.footer{
+    background-color: black;
+    color:#f5f6f7
+}
+
+@media screen and (max-width: 800px) {
+    #main-container {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .sidebar , .main-content {
+        width: 100%;
+    }
+}

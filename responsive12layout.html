@@ -1,0 +1,93 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+            margin: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 10px;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .header {
+            grid-column: span 12;
+            background-color: navy;
+            color: white;
+            text-align: center;
+        }
+
+        .about {
+            grid-column: span 6;
+            transform: rotate(20deg);
+        }
+
+        .skills {
+            grid-column: span 6;
+            background-image: linear-gradient(to right, yellow, blue);
+        }
+
+        .projects {
+            grid-column: span 12;
+            box-shadow: 15px 15px 6px purple;
+        }
+
+        .contact {
+            grid-column: span 12;
+            text-align: center;
+            transform: skew(1deg, 1deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box header">
+            <h1>My Portfolio</h1>
+            <p>Welcome to my personal website</p>
+        </div>
+
+        <div class="box about">
+            <h2>About Me</h2>
+            <p>My name is adesoji excel. I am a Computer Science student
+            interested in web development and technology.</p>
+        </div>
+
+        <div class="box skills">
+            <h2>My Skills</h2>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+        </div>
+
+        <div class="box projects">
+            <h2>My Projects</h2>
+            <p>1. Personal Website</p>
+            <p>2. Simple Login Page</p>
+        </div>
+
+        <div class="box contact">
+            <h2>Contact Me</h2>
+            <p>Email: adesojiexcel@gmail.com</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+```
